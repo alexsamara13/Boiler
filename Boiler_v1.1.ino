@@ -38,9 +38,6 @@ bool BUTTinc , BUTTdec ;
 uint32_t tmr, tmr1, tmr2 , tmr3, myTimer, myTimer1, myTimer2 , MINUT , HOUR;
 float GRADHEAT, OVERHEAT;
 
-
-
-
 void setup() {
   // Serial.begin(9600);
   pinMode(2, OUTPUT);  //RELE VENT
@@ -66,8 +63,6 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 1);
-
-
 }
 void timerIsr() {   // прерывание таймера
   butt1.tick();     // отработка теперь находится здесь
